@@ -1,0 +1,33 @@
+{
+  "name": "chat-app",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/uuid": "^10.0.0",
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "5.8.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@langchain/community": "^0.3.36",
+    "@langchain/core": "^0.3.42",
+    "cheerio": "^1.0.0",
+    "chromadb": "^2.0.1",
+    "uuid": "^11.1.0"
+  }
+}
